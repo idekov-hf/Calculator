@@ -12,6 +12,7 @@
 		5D085D301E5666C600EBFAF2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D085D2E1E5666C600EBFAF2 /* Main.storyboard */; };
 		5D085D321E5666C600EBFAF2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D085D311E5666C600EBFAF2 /* Assets.xcassets */; };
 		5D085D351E5666C600EBFAF2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D085D331E5666C600EBFAF2 /* LaunchScreen.storyboard */; };
+		5D186E691E5896AF00C8477B /* CalculatorBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D186E681E5896AF00C8477B /* CalculatorBrain.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		5D085D311E5666C600EBFAF2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5D085D341E5666C600EBFAF2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5D085D361E5666C600EBFAF2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D186E681E5896AF00C8477B /* CalculatorBrain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculatorBrain.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 			isa = PBXGroup;
 			children = (
 				5D085D2C1E5666C600EBFAF2 /* ViewController.swift */,
+				5D186E681E5896AF00C8477B /* CalculatorBrain.swift */,
 				5D085D2E1E5666C600EBFAF2 /* Main.storyboard */,
 				5D085D3C1E566A9900EBFAF2 /* Supporting Files */,
 			);
@@ -145,6 +148,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D186E691E5896AF00C8477B /* CalculatorBrain.swift in Sources */,
 				5D085D2D1E5666C600EBFAF2 /* ViewController.swift in Sources */,
 				5D085D2B1E5666C600EBFAF2 /* AppDelegate.swift in Sources */,
 			);
@@ -310,6 +314,7 @@
 				5D085D3B1E5666C600EBFAF2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

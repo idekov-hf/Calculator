@@ -9,17 +9,48 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    
+    // Implicitly unwrapped optional
+    @IBOutlet weak var display: UILabel!
+    
+    var userIsInTheMiddleOfTyping = false
+    
+    @IBAction func touchDigit(_ sender: UIButton) {
+        // The only way to make a variable read-only (eg. currentTitle) is by making it a computed property
+        let digit = sender.currentTitle!
+        if userIsInTheMiddleOfTyping {
+            let textCurrentlyInDisplay = display.text!
+            display.text = textCurrentlyInDisplay + digit
+        } else {
+            display.text = digit
+            userIsInTheMiddleOfTyping = true
+        }
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    // Computed property
+    var displayValue: Double {
+        get {
+            return Double(display.text!)!
+        }
+        set {
+            display.text = String(newValue)
+        }
     }
-
-
+    
+    @IBAction func performOperation(_ sender: UIButton) {
+        userIsInTheMiddleOfTyping = false
+        if let mathematicalSymbol = sender.currentTitle {
+            switch mathematicalSymbol {
+            case "π":
+                displayValue = Double.pi
+            case "√":
+                displayValue = sqrt(displayValue)
+            default:
+                break
+            }
+        }
+    }
+    
+    
 }
 
